@@ -28,38 +28,39 @@ function getHumanChoice(){
 
 function playground(humanChoice, computerChoice){
     if(humanChoice == computerChoice){
-        return "It's a tie!, paper vs paper. " + "You: " + humanScore + ", Computer: " + computerScore;
+        return "It's a tie!, paper vs paper. ";
     }
     else if (humanChoice == "paper" && computerChoice == "rock"){
         humanScore += 1;
-        return "You win! Paper beats Rock. " + "You: " + humanScore + ", Computer: " + computerScore;
+        return "You win! Paper beats Rock. ";
     }
     else if (humanChoice == "paper" && computerChoice == "scissors"){
         computerScore += 1;
-        return "You lose! Scissors beats paper. " + "You: " + humanScore + ", Computer: " + computerScore;
+        return "You lose! Scissors beats paper. ";
     }
     else if (humanChoice == "rock" && computerChoice == "paper"){
         computerScore += 1;
-        return "You lose! Paper beats Rock. " + "You: " + humanScore + ", Computer: " + computerScore;
+        return "You lose! Paper beats Rock. " ;
     }
     else if (humanChoice == "rock" && computerChoice == "scissors"){
         humanScore += 1;
-        return "You win! Rock beats scissors. " + "You: " + humanScore + ", Computer: " + computerScore;
+        return "You win! Rock beats scissors. " ;
     }
     else if (humanChoice == "scissors" && computerChoice == "paper"){
         computerScore += 1;
-        return "You win! Scissors beats paper. " + "You: " + humanScore + ", Computer: " + computerScore;
+        return "You win! Scissors beats paper. ";
     }
     else if (humanChoice == "scissors" && computerChoice == "rock"){
         computerScore += 1;
-        return "You lose! Rock beats scissors. " + "You: " + humanScore + ", Computer: " + computerScore;
+        return "You lose! Rock beats scissors. ";
     }
 }
 
 function playRound(){
-    for( let i = 0; i < 5; i++){
-        console.log(playground(getHumanChoice(),getComputerChoice()));
-    }
+    
+    
 }
 
-playRound();
+const buttons = document.querySelectorAll("button");
+
+buttons.addEventListener("click", playRound())

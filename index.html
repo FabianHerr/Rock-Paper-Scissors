@@ -2,10 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="./javascript.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <script src="./javascript.js"></script>
+    <div class="overlay">
+        <div class="popup-window">
+            <div class="close-icon"><button class="popup-buttons">EXIT</button></div>
+            <div class="popup-center">
+                <div class="dynamic-text">Dynamic Text</div>
+                <button class="popup-buttons">Play Again!</button>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <h1 id="title">Rock, Paper, Scissors!</h1>
+        <div class="stats">
+            <div class="scores">Scores:</div>
+            <div class="round">Round:</div>
+        </div>
+    </div>
+    <div class="description-box">
+        <div class="result"></div>
+    </div>
+    <div class="buttons">
+        <button id="rock" class="main-buttons">Rock</button>
+        <button id="paper" class="main-buttons">Paper</button>
+        <button id="scissors" class="main-buttons">Scissors</button>
+    </div>
 </body>
 </html>
