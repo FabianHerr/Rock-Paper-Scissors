@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <!-- Pop-up Window structure -->
     <div class="overlay">
         <div class="popup-window">
             <div class="close-icon"><button class="popup-buttons">EXIT</button></div>
@@ -17,16 +18,23 @@
             </div>
         </div>
     </div>
+    
+    <!-- Main box with score tracker and title of the game -->
     <div class="top">
         <h1 id="title">Rock, Paper, Scissors!</h1>
         <div class="stats">
-            <div class="scores">Scores:</div>
-            <div class="round">Round:</div>
+            <div class="scores">You : <div id="scoreH"></div></div>
+            <div class="scores">Computer : <div id="scoreC"></div></div>
+            <div class="round">Round : <div id="round"></div></div>
         </div>
     </div>
+
+    <!-- Box for result display -->
     <div class="description-box">
         <div class="result"></div>
     </div>
+
+    <!-- Rock, paper and scissors buttons -->
     <div class="buttons">
         <button id="rock" class="main-buttons">Rock</button>
         <button id="paper" class="main-buttons">Paper</button>
