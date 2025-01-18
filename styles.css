@@ -30,16 +30,12 @@
     padding-inline: 70px;
 }
 
-.close-icon{
-    text-align: right;
-    padding-bottom: 50px;
-}
-
 .dynamic-text {
     font-size: 70px;
     font-weight: 900;
     color: white;
     padding-bottom: 80px;
+    padding-top: 30px;
 }
 
 .popup-buttons{
@@ -50,7 +46,7 @@
     box-shadow:  2px 2px 7px 2px rgba(0, 0, 0, 0.3);
     background-color: #ffb703;
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'specialFont';
 }
 
@@ -115,6 +111,8 @@ body {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-buttons {

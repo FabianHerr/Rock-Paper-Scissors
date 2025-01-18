@@ -69,34 +69,73 @@ rock.addEventListener("click", () =>{
     resultDisplay(playground(humanCh,getComputerChoice()));
     scoreH.textContent = humanScore;
     scoreC.textContent = computerScore;
-    round.textContent = round_num + 1;
+    round_num++;
+    round.textContent = round_num;
 
     // Ends game if reached 5 pts
-    if ( humanScore == 5 || computerScore == 5){
-        setTimeout(endGame(),3000);
+    if ( humanScore == 3 || computerScore == 3){
+        setTimeout(endGame,3000);
+        disableButtons(true);
+        displayWinner();
     }
 })
 
 paper.addEventListener("click", () =>{
     humanCh = "paper";
     resultDisplay(playground(humanCh,getComputerChoice()));
+    scoreH.textContent = humanScore;
+    scoreC.textContent = computerScore;
+    round_num++;
+    round.textContent = round_num;
+
+    // Ends game if reached 5 pts
+    if ( humanScore == 3 || computerScore == 3){
+        setTimeout(endGame,3000);
+        disableButtons(true);
+        displayWinner();
+    }
 })
 
 scissors.addEventListener("click", () =>{
     humanCh = "scissors";
     resultDisplay(playground(humanCh,getComputerChoice()));
+    scoreH.textContent = humanScore;
+    scoreC.textContent = computerScore;
+    round_num++;
+    round.textContent = round_num;
+
+    // Ends game if reached 5 pts
+    if ( humanScore == 3 || computerScore == 3){
+        setTimeout(endGame ,3000);
+        disableButtons(true);
+        displayWinner();
+    }
 })
+
+// helper function: disables buttons (while message is displayed)
+function disableButtons(state) {
+    rock.disabled = state;
+    paper.disabled = state;
+    scissors.disabled = state;
+}
+
+// result variable for display
+const result = document.querySelector(".result");
 
 // adds letter by letter effect and displays it in the result div
 function resultDisplay(display){
-    const result = document.querySelector(".result");
     result.textContent = "";
     let i = 0;
+
+    disableButtons(true);
     function typeEffect(){
         if ( i < display.length){
             result.textContent += display[i];
             i ++;
-            setTimeout(typeEffect,80)
+            setTimeout(typeEffect,70)
+        }
+        else{
+            disableButtons(false);
         }
     }
     typeEffect()
@@ -107,5 +146,39 @@ const overlay = document.querySelector(".overlay");
 
 function endGame(){
     overlay.style.display = "flex";
+}
+
+//play-again button variable 
+const popup_buttons = document.querySelector(".popup-buttons");
+
+popup_buttons.addEventListener("click",() =>{
+    overlay.style.display = "none";
+    resetScores();
+})
+
+function resetScores(){
+    humanScore = 0;
+    computerScore = 0;
+    round_num = 0;
+    scoreH.textContent = humanScore;
+    scoreC.textContent = computerScore;
+    round.textContent = round_num;
+
+    //reset display box
+    result.textContent = "You're playing again?! Come on, man!";
+    disableButtons(false);
+}
+
+// setting dynamic text announcing the winner of the game
+const dynamicText = document.querySelector(".dynamic-text");
+
+function displayWinner(){
+    dynamicText.textContent = "";
+    if( humanScore == 3){
+        dynamicText.textContent = "YOU WIN!";
+    }
+    else{
+        dynamicText.textContent = "YOU LOSE!"
+    }
 }
 
