@@ -9,11 +9,16 @@ It’s all about playing Rock, Paper, Scissors against a computer. The interface
 
 ---
 
+## Visit The Page
+
+[![Rock, Paper, Scissors](https://fabianherr.github.io/rock_paper_scissors/your-image.png)](https://fabianherr.github.io/Rock-Paper-Scissors/)
+
+---
+
 ## Features  
 - ✋ **Pick Your Move**: Choose Rock, Paper, or Scissors and see how you stack up against the computer.  
 - 🤖 **Random Computer Opponent**: The computer makes its choice randomly, so you’ll always have a fair fight.  
 - 🏆 **Track Your Wins**: The game keeps score of how many rounds you and the computer have won.  
-- 📱 **Responsive Design**: Works great on both mobile and desktop.  
 - 🎨 **Clean and Modern Look**: Simple UI with smooth animations to make it easy on the eyes.
 
 ---
@@ -25,4 +30,4 @@ It’s all about playing Rock, Paper, Scissors against a computer. The interface
 
 ---
 
-[Check it out here and give it a try!](https://fabianherr.github.io/rock_paper_scissors/)
+[Check it out here and give it a try!](https://fabianherr.github.io/Rock-Paper-Scissors/)
