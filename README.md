@@ -11,7 +11,7 @@ It’s all about playing Rock, Paper, Scissors against a computer. The interface
 
 ## Visit The Page
 
-[![Rock, Paper, Scissors](https://fabianherr.github.io/rock_paper_scissors/your-image.png)](https://fabianherr.github.io/Rock-Paper-Scissors/)
+[![Rock, Paper, Scissors](https://fabianherr.github.io/Rock-Paper-Scissors/Rock-Paper-Scissors.png)](https://fabianherr.github.io/Rock-Paper-Scissors/)
 
 ---
 
