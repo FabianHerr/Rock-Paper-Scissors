@@ -10,6 +10,7 @@ It’s all about playing Rock, Paper, Scissors against a computer. The interface
 ---
 
 ## Visit The Page
+[Check it out here and give it a try!](https://fabianherr.github.io/Rock-Paper-Scissors/)
 
 [![Rock, Paper, Scissors](https://fabianherr.github.io/Rock-Paper-Scissors/Rock-Paper-Scissors.png)](https://fabianherr.github.io/Rock-Paper-Scissors/)
 
@@ -28,6 +29,5 @@ It’s all about playing Rock, Paper, Scissors against a computer. The interface
 - **CSS**: To make it look good.  
 - **JavaScript**: Handles the game logic, random choices, and interactions.
 
----
 
-[Check it out here and give it a try!](https://fabianherr.github.io/Rock-Paper-Scissors/)
+
